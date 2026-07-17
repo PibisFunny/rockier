@@ -1,0 +1,47 @@
+<style> body {background-image: url('res/adrian.gif');}
+        p {background-color: black; color:white; font-weight: bold; font-family: cursive;}
+        #entry {position:fixed; inset:0; display: flex; justify-content: center;
+        align-items: center; background: black; cursor: pointer; z-index: 10;}
+        #pagecontent {display: none;}
+</style>
+
+<div id="entry">
+    <img src="res/adrian.gif"/>
+</div>
+
+<div id="pagecontent">
+<table width="100%" border="0">
+<tr>
+
+<td align="center">
+<p>ADRIAAAN</p>
+<img src="res/adrian2.gif"/>
+<p>ADRIAAAAAN</p>
+
+</td>
+</tr>
+</table>
+
+<audio id="bg" loop>
+  <source src="res/adrian.mp3" type="audio/mpeg">
+  your browser is ancient ya know like it doesnt support the audio tag ya know
+</audio>
+
+</div>
+
+<script>
+    const entry = document.getElementById("entry");
+    const pagecontent = document.getElementById("pagecontent");
+    const bg = document.getElementById("bg");
+
+    entry.addEventListener("click", async () => {
+        try {
+            await bg.play();
+        } catch (err) {
+            console.error(err);
+        }
+
+        entry.style.display = "none";
+        pagecontent.style.display = "block";
+    });
+</script>
