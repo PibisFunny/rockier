@@ -1,16 +1,12 @@
-<style> body {background-image: url('res/adrian.gif');}
-        p {background-color: black; color:white; font-weight: bold; font-family: "AtomicSans";}
-        @font-face {
-            font-family: 'AtomicSans';
-            src: url(res/comicsans.woff) format('woff');
-        }
+<style> body {background: black;}
+        p {background-color: black; color:white; font-weight: bold; font-family: 'Times New Roman', Times, serif;}
         #entry {position:fixed; inset:0; display: flex; justify-content: center;
         align-items: center; background: black; cursor: pointer; z-index: 10;}
         #pagecontent {display: none;}
 </style>
 
 <div id="entry">
-    <img src="res/adrian.gif"/>
+    <img src="res/rocky01.gif"/>
 </div>
 
 <div id="pagecontent">
@@ -18,16 +14,17 @@
 <tr>
 
 <td align="center">
-<p>ADRIAAAN</p>
-<img src="res/adrian2.gif"/>
-<p>ADRIAAAAAN</p>
 
+<p style="white-space: pre;">IT WAS LIKE POI S O N  TO THE WEAKENED BODY</p>
+<p style="white-space: pre;">A   S M O K Y PERFUME </p>
+<img style="border: 6px double black;" src="res/rocky0.gif"/>
 </td>
+<td><img draggable="false" style="user-select: none;" src="res/2011.png"/></td>
 </tr>
 </table>
 
 <audio id="bg" loop>
-  <source src="res/adrian.mp3" type="audio/mpeg">
+  <source src="res/rocky0.mp3" type="audio/mpeg">
   your browser is ancient ya know like it doesnt support the audio tag ya know
 </audio>
 
@@ -37,6 +34,8 @@
     const entry = document.getElementById("entry");
     const pagecontent = document.getElementById("pagecontent");
     const bg = document.getElementById("bg");
+
+
 
     entry.addEventListener("click", async () => {
         try {
@@ -48,4 +47,8 @@
         entry.style.display = "none";
         pagecontent.style.display = "block";
     });
+</script>
+<script>
+
+
 </script>
